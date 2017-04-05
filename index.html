@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Url Shortener</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body>
+	
+	<div class="container" ng-app="urlShortener">
+		<!--Panel-->
+		<div class="card" ng-controller="urlShortenerController">
+		    <h3 class="card-header card-danger">Shorten your links</h3>
+		    <div class="card-block">
+		    	<div>
+		    		<input type="text" placeholder="Enter your URL" ng-model="longUrl">
+		        	<a class="btn btn-danger" ng-click="displayShortenUrl()">SHORTEN URL</a>
+		    	</div>
+		        <h3>Your shortened URL:</h3>
+		        <div>{{shortUrl}}</div>
+		    </div>
+		</div>
+		<!--/.Panel-->
+	</div>
+	
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
